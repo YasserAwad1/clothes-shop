@@ -31,7 +31,7 @@ class TopAppBar extends StatelessWidget {
                   size: 40,
                 )),
             Consumer<Cart>(
-              builder: (_, cart, ch) => Badge(
+              builder: (_, cart, ch) => BadgeWidget(
                   child: ch!, value: cart.itemCount.toString(), color: gold),
               child: IconButton(
                 onPressed: () =>
